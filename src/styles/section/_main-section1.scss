@@ -4,6 +4,10 @@
 
 
 .section1 {
+  .fixed-side-header {
+    writing-mode: vertical-rl;
+    margin-left: 1rem;
+  }
   .box-h4 {
     font-weight: map-get($font-weight, regular );
     font-size: map-get($font-size, small );

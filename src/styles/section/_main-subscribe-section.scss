@@ -9,11 +9,6 @@
   text-align: center;
   height: 100vh;
   margin-top: 2rem;
-  &__line {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-  }
   &__div__h1 {
     font-size: 32px;
     line-height: 2;
@@ -22,19 +17,38 @@
     background: transparent;
     border: none;
     margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    height: 25px;
+    text-align: center;
   }
-    
-}
-.subscribe-button {
-  display: flex;
-  margin-top: 1rem;
-  &__subscribe {
-    flex: 1;
-    padding: 20px 50px;
-    background-color: rgb(46, 44, 44);
-    color: white;
-    border-radius: $block-border-radius;
 }
 
+  .subscribe-section__line {
+    height: 1px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    animation-name: stretch;
+    animation-duration: 2.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    margin: 0 auto;
   }
+  
+
+@keyframes stretch {
+  0% {
+    transform: scale(.8);
+    background-color: #ccc;
+    }
+
+  100% {
+  background-color: #ccc;
+  }
+}
+
+
 
