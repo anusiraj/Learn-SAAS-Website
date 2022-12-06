@@ -10,9 +10,12 @@
   margin: 0;
 }
 
-.button-loadmore, .subscribe-section__subscribe-button {
+.button-loadmore {
   display: flex;
   margin-top: 1rem;
+}
+.button-loadmore :hover {
+  background-color: rgb(238, 167, 3);
 }
 .button-loadmore__loadmore {
   flex: 1;
@@ -71,9 +74,12 @@
   margin: 0;
 }
 
-.button-loadmore, .subscribe-section__subscribe-button {
+.button-loadmore {
   display: flex;
   margin-top: 1rem;
+}
+.button-loadmore :hover {
+  background-color: rgb(238, 167, 3);
 }
 .button-loadmore__loadmore {
   flex: 1;
@@ -245,9 +251,43 @@
 .section2 .box-h1 {
   font-size: 44px;
   line-height: 1;
+  position: relative;
 }
 .section2 .box-h4 {
   line-height: 4;
+}
+.section2 .box-h1 {
+  position: relative;
+}
+.section2 .box-h1:after {
+  content: "->";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.section2 .box-h1:hover:after {
+  right: 1em;
+  opacity: 1;
+}
+
+.section2:hover {
+  animation: moveup 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes moveup {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-2%);
+  }
 }
 
 .section3 {
@@ -264,9 +304,28 @@
 .section3 .box-h1 {
   font-size: 44px;
   line-height: 1;
+  position: relative;
 }
 .section3 .box-h4 {
   line-height: 4;
+}
+.section3 .box-h1 {
+  position: relative;
+}
+.section3 .box-h1:after {
+  content: "->";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.section3 .box-h1:hover:after {
+  right: 1em;
+  opacity: 1;
 }
 .section3__block1__line {
   margin-top: 1em;
@@ -290,9 +349,28 @@
 .section4 .box-h1 {
   font-size: 44px;
   line-height: 1;
+  position: relative;
 }
 .section4 .box-h4 {
   line-height: 4;
+}
+.section4 .box-h1 {
+  position: relative;
+}
+.section4 .box-h1:after {
+  content: "->";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.section4 .box-h1:hover:after {
+  right: 1em;
+  opacity: 1;
 }
 
 * {
@@ -320,6 +398,24 @@
   background-size: cover;
 }
 .section5__block1 .box-h1 {
+  position: relative;
+}
+.section5__block1 .box-h1:after {
+  content: "->";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.section5__block1 .box-h1:hover:after {
+  right: 1em;
+  opacity: 1;
+}
+.section5__block1 .box-h1 {
   font-size: 44px;
   line-height: 1;
 }
@@ -339,6 +435,24 @@
   align-content: flex-start;
   background-image: linear-gradient(rgba(226, 169, 13, 0.45), rgba(221, 143, 10, 0.45)), url("https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
   background-size: cover;
+}
+.section5__block2 .box-h1 {
+  position: relative;
+}
+.section5__block2 .box-h1:after {
+  content: "->";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.section5__block2 .box-h1:hover:after {
+  right: 1em;
+  opacity: 1;
 }
 .section5 .box-h1 {
   font-size: 44px;
@@ -363,6 +477,24 @@
   background-image: linear-gradient(rgba(93, 89, 89, 0.45), rgba(160, 155, 155, 0.45)), url("https://images.unsplash.com/photo-1528441397448-a44d50563cf8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
   background-size: cover;
 }
+.section6__block1 .box-h1 {
+  position: relative;
+}
+.section6__block1 .box-h1:after {
+  content: "->";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.section6__block1 .box-h1:hover:after {
+  right: 1em;
+  opacity: 1;
+}
 .section6 .box-h1 {
   font-size: 24px;
   line-height: 1;
@@ -378,6 +510,24 @@
   padding-top: 3rem;
   background-image: linear-gradient(rgba(188, 10, 141, 0.45), rgba(197, 17, 179, 0.45)), url("https://images.unsplash.com/photo-1562185022-c0a7889d7fbb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
   background-size: cover;
+}
+.section6__block2 .box-h1 {
+  position: relative;
+}
+.section6__block2 .box-h1:after {
+  content: "->";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.section6__block2 .box-h1:hover:after {
+  right: 1em;
+  opacity: 1;
 }
 .section6 .box-h1 {
   font-size: 24px;
@@ -398,6 +548,24 @@
   background-image: linear-gradient(rgba(103, 97, 97, 0.45), rgba(78, 75, 75, 0.45)), url("https://images.unsplash.com/photo-1551216223-37c8d1dbec5c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=850&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
   background-size: cover;
 }
+.section6__block3 .box-h1 {
+  position: relative;
+}
+.section6__block3 .box-h1:after {
+  content: "->";
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 0.5em;
+  right: 2em;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.section6__block3 .box-h1:hover:after {
+  right: 1em;
+  opacity: 1;
+}
 .section6 .box-h1 {
   font-size: 24px;
   line-height: 1;
@@ -410,6 +578,32 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.button-loadmore {
+  display: flex;
+  margin-top: 1rem;
+}
+.button-loadmore :hover {
+  background-color: rgb(238, 167, 3);
+}
+.button-loadmore__loadmore {
+  flex: 1;
+  padding: 20px 50px;
+  background-color: rgb(46, 44, 44);
+  color: white;
+  border-radius: 15px;
+}
+
+.button, .section1__block1:nth-child(1) {
+  height: 15px 20px;
+  border-radius: 10px;
 }
 
 .subscribe-section {
@@ -434,14 +628,17 @@
   border: none;
   margin-top: 2rem;
 }
-.subscribe-section__subscribe-button {
-  width: 50%;
-  margin-left: 7rem;
-  padding-block: 20px;
-  padding-left: 80px;
-  background-color: red;
-  border-radius: 15px;
+
+.subscribe-button {
+  display: flex;
+  margin-top: 1rem;
+}
+.subscribe-button__subscribe {
+  flex: 1;
+  padding: 20px 50px;
+  background-color: rgb(46, 44, 44);
   color: white;
+  border-radius: 15px;
 }
 
 body {

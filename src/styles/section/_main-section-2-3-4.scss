@@ -1,0 +1,31 @@
+@import '../shared/inheritance/_mixins.scss';
+
+.section2 {
+    @include section2-3-4;
+    @include arrow; 
+    
+    background-image: $section2-image1;
+    background-size: cover;
+  }
+  .section2:hover{
+    @include section1-animation;
+  }
+  .section3 {
+    @include section2-3-4;
+    @include arrow;
+    background-image: $section3-image1;
+    background-size: cover;
+    &__block1__line {
+      margin-top: 1em;
+      width: 30px;
+  }
+  p {
+    line-height: 2;
+  }
+}
+  .section4 {
+    @include section2-3-4;
+    @include arrow;
+    background-image: $section4-image1;
+    background-size: cover;
+  }
