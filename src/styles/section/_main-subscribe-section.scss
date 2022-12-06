@@ -1,5 +1,4 @@
 @import '../shared/_variables.scss';
-
 @import '../shared/inheritance/extends.scss';
 
 .subscribe-section {
@@ -8,7 +7,6 @@
   justify-content: center;
   text-align: center;
   height: 100vh;
-  margin-top: 2rem;
   &__div__h1 {
     font-size: 32px;
     line-height: 2;
@@ -22,7 +20,6 @@
     text-align: center;
   }
 }
-
   .subscribe-section__line {
     height: 1px;
     width: 500px;
@@ -37,17 +34,15 @@
     animation-play-state: running;
     margin: 0 auto;
   }
-  
+  @keyframes stretch {
+    0% {
+      transform: scale(.8);
+      background-color: #ccc;
+      }
 
-@keyframes stretch {
-  0% {
-    transform: scale(.8);
+    100% {
     background-color: #ccc;
     }
-
-  100% {
-  background-color: #ccc;
-  }
 }
 
 

@@ -50,7 +50,7 @@
   margin: 0;
 }
 
-.header {
+.header, .footer__nav {
   padding-bottom: 45px;
   color: white;
   display: flex;
@@ -60,8 +60,9 @@
 }
 .header__maido {
   font-weight: 700;
+  font-size: 32px;
 }
-.header a {
+.header a, .footer__nav a {
   color: #FFF;
   text-decoration: none;
   display: block;
@@ -74,6 +75,31 @@
 }
 .header__nav__item {
   margin-left: 20px;
+}
+.header__nav, .header__nav__item {
+  display: inline-block;
+  position: relative;
+}
+.header__nav :hover:before, .header__nav__item :hover:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  background: rgb(153, 135, 135);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  left: calc(100% - 8px);
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  background: rgb(241, 237, 6);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  left: calc(100% - 8px);
 }
 
 * {
@@ -305,21 +331,6 @@
 .section2 .box-h1:hover:after {
   right: 1em;
   opacity: 1;
-}
-
-.section2:hover {
-  animation: moveup 0.5s ease-in-out;
-  animation-fill-mode: forwards;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-@keyframes moveup {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(-2%);
-  }
 }
 
 .section3 {
@@ -658,7 +669,6 @@
   justify-content: center;
   text-align: center;
   height: 100vh;
-  margin-top: 2rem;
 }
 .subscribe-section__div__h1 {
   font-size: 32px;
@@ -697,6 +707,32 @@
     background-color: #ccc;
   }
 }
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__nav {
+  flex: 0 0 70%;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__socail-icons {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer__socail-icons a {
+  padding-left: 15px;
+  color: white;
+}
+
+.footer__heading {
+  flex: 0 0 100%;
+}
+
 body {
   background: rgb(25, 21, 23);
   color: white;
@@ -718,10 +754,6 @@ main .heading-between-section {
   transform: rotate(180deg);
   position: fixed;
   margin-left: -3rem;
-}
-
-footer {
-  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
