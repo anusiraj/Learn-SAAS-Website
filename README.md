@@ -4,8 +4,7 @@
 A static website for learning SAAS
 
 # Deploy link
-
-I couldn't deploy from github.DNS was unsuccessfull
+(https://63902e9443ba1a45bd081722--courageous-muffin-e5e475.netlify.app/)
 
 # Requirements
 
